@@ -89,6 +89,6 @@ link: https://docs.oracle.com/javacomponents/jmc-5-5/jmc-user-guide/about.htm#JM
 link for more details: https://docs.oracle.com/javacomponents/jmc-5-4/jfr-runtime-guide/about.htm#JFRUH170
 
 ## websites
-- [baeldung](https://www.baeldung.com/java-memory-leak)
-- [javacodegeeks](https://www.javacodegeeks.com/2015/08/java-memory-leaks.html)
-    
+- [oracle](https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/memleaks002.html)
+- [baeldung](https://www.baeldung.com/java-memory-leaks)
+- [javarevisited](https://javarevisited.blogspot.com/search?q=memory+issues)
