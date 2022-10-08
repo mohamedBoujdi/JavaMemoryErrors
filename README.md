@@ -14,7 +14,7 @@
 
 # JavaMemoryErrors
 
-1. [Introduction](docs/src/main/java/org.example/MemoryErrorInJava.java)
+1. [Introduction](#introduction)
 
 2. [Memory Leak Examples](#memory-leak-examples)
    > (1) & (2) This repository [JavaMemoryErrors]( https://github.com/mohamedBoujdi/JavaMemoryErrors) contains a set of Java pieces of code commented that are intended to be used to test the behavior of the JVM when it comes to memory errors.
