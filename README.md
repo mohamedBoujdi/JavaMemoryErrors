@@ -6,7 +6,7 @@
 ![contributors](https://img.shields.io/github/contributors/mohamedBoujdi/JavaMemoryErrors)
 ![forks](https://img.shields.io/github/forks/mohamedBoujdi/JavaMemoryErrors)
 ![stars](https://img.shields.io/github/stars/mohamedBoujdi/JavaMemoryErrors)  
-![license](https://img.shields.io/github/license/mohamedBoujdi/JavaMemoryErrors)
+[![GitHub license](https://img.shields.io/github/license/mohamedBoujdi/JavaMemoryErrors?style=plastic)](https://github.com/mohamedBoujdi/JavaMemoryErrors/blob/main/LICENSE.txt)
 ![size](https://img.shields.io/github/repo-size/mohamedBoujdi/JavaMemoryErrors)
 ![top language](https://img.shields.io/github/languages/top/mohamedBoujdi/JavaMemoryErrors)
 ![awesome badge](https://awesome.re/badge-flat2.svg)
