@@ -25,6 +25,11 @@
     - [YourKit](#yourkit)
     - [JDK Mission Control](#jdk-mission-control)
     - [JDK Flight Recorder](#jdk-flight-recorder)
+    - [Heap Dumps](#heap-dumps)
+    - [Code Reviews](#code-reviews)
+    - [Code Benchmarking](#code-benchmarking)
+    - [IDE Memory Leak Warnings](#ide-memory-leak-warnings)
+    - [Java Virtual Machine Monitoring Tools](#java-virtual-machine-monitoring-tools)
 4. [websites](#websites)
 
 
@@ -87,6 +92,70 @@ link: https://docs.oracle.com/javacomponents/jmc-5-5/jmc-user-guide/about.htm#JM
  JDK Flight Recorder is a tool that is part of the JDK and is used to monitor the memory usage of a Java application. It is a graphical tool that allows you to monitor the memory usage of a Java application. It is also used to monitor the CPU usage, threads, and other resources of a Java application.
  
 link for more details: https://docs.oracle.com/javacomponents/jmc-5-4/jfr-runtime-guide/about.htm#JFRUH170
+
+### Heap Dumps
+ Heap dumps are files that contain the memory usage of a Java application. They are used to analyze the memory usage of a Java application. They are also used to detect memory leaks in Java applications.They are used to analyze the memory usage of a Java application. They are also used to detect memory leaks in Java applications.
+example of a heap dump:
+```
+java -XX:+HeapDumpOnOutOfMemoryError -jar myapp.jar
+```
+>file name: java_pid<process id>.hprof (for example: java_pid1234.hprof)
+>- this file exits in the current directory of the application
+### Code Reviews
+ Code reviews are used to detect memory leaks in Java applications.They are also used to detect memory leaks in Java applications.
+ who should do this kind of code review:
+>- developers
+>- architects
+>- team leads
+>- managers
+>- etc.
+### Code Benchmarking
+ Code benchmarking is used to detect memory leaks in Java applications. It is used to compare the memory usage of a Java application before and after a change. It is also used to compare the memory usage of a Java application with other Java applications.
+how to do code benchmarking:  
+>- use a tool like JProfiler to monitor the memory usage of a Java application
+>- make a change to the Java application
+>- use the same tool to monitor the memory usage of the Java application after the change
+>- compare the memory usage before and after the change
+>- compare the memory usage of the Java application with other Java applications
+>- if the memory usage of the Java application increased after the change, then there is a memory leak
+
+### IDE Memory Leak Warnings
+ IDEs such as IntelliJ IDEA and Eclipse can detect memory leaks in Java applications. They can detect memory leaks by analyzing the code and by analyzing the memory usage of the application. They can also detect memory leaks by analyzing the memory usage of the application.
+#### IntelliJ IDEA
+IntelliJ IDEA can detect memory leaks in Java applications. It can detect memory leaks by analyzing the code and by analyzing the memory usage of the application. 
+how to enable memory leak detection in IntelliJ IDEA:
+>- go to File -> Settings -> Build, Execution, Deployment -> Compiler -> Java Compiler
+>- check the box "Show warnings for missing @Override annotations"
+>- click OK
+>- restart IntelliJ IDEA
+
+
+>CPU and Memory Profiler
+>- open the project
+>- open the class that contains the memory leak
+>- click on the line number of the line that contains the memory leak
+>
+> ![profiler in intelliJ IDEA](/home/boujdimkinot7991/Pictures/Screenshots/Screenshot from 2022-10-08 17-35-41.png)
+
+#### Eclipse
+Eclipse can detect memory leaks in Java applications by analyzing the memory usage of the application.
+how to enable memory leak detection in Eclipse:
+>- go to Window -> Preferences -> Java -> Compiler -> Errors/Warnings
+>- check the box "Potential programming problems"
+>- click OK
+>- restart Eclipse
+### Java Vitual Machine Monitoring Tools
+ JVM Monitoring is used to detect memory leaks in Java applications. It is used to monitor the memory usage of a Java application. It is also used to monitor the CPU usage, threads, and other resources of a Java application.
+the standard JVM monitoring tools are:
+>- jstat (https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jstat.html)
+>- jmap (https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jmap.html)
+>- jstack (https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jstack.html)
+>- jcmd (https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jcmd.html)
+>- jinfo (https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jinfo.html)
+>- jps (https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jps.html)
+>- jhat (https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jhat.html)
+>- jconsole (https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)
+>- jvisualvm (https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/index.html)
 
 ## websites
 - [oracle](https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/memleaks002.html)
